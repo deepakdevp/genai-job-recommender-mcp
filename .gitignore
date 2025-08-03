@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+*.log
+
+# Env
+.venv/
+env/
+*.env
+
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# uv + pyenv
+uv.lock
+.python-version
