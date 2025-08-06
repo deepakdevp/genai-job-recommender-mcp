@@ -44,5 +44,6 @@ def call_openai(prompt, max_tokens=500):
           }
         ],
         max_tokens=max_tokens,
+        temperature=0.5,
     )
-    return response.choices[0].text
+    return response.choices[0].message.content
