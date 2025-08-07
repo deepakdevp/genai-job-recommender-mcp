@@ -151,7 +151,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- CONTACT -->
 ## Contact
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Your Name -  deepakdevp@gmail.com
 
 Project Link: [https://github.com/deepakdevp/genai-job-recommender-mcp](https://github.com/deepakdevp/genai-job-recommender-mcp)
 
