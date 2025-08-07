@@ -9,7 +9,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/yourusername/genai-job-recommender-mcp">
+  <a href="https://github.com/deepakdevp/genai-job-recommender-mcp">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -23,9 +23,9 @@
     <br />
     <a href="#usage">View Demo</a>
     ·
-    <a href="https://github.com/yourusername/genai-job-recommender-mcp/issues">Report Bug</a>
+    <a href="https://github.com/deepakdevp/genai-job-recommender-mcp/issues">Report Bug</a>
     ·
-    <a href="https://github.com/yourusername/genai-job-recommender-mcp/issues">Request Feature</a>
+    <a href="https://github.com/deepakdevp/genai-job-recommender-mcp/issues">Request Feature</a>
   </p>
 </p>
 
@@ -94,7 +94,7 @@ To get a local copy up and running follow these simple steps.
 ### Installation
 1. Clone the repo
    ```sh
-   git clone https://github.com/yourusername/genai-job-recommender-mcp.git
+   git clone https://github.com/deepakdevp/genai-job-recommender-mcp.git
    cd genai-job-recommender-mcp
    ```
 2. Install dependencies
@@ -133,7 +133,7 @@ _For more examples, please refer to the [Documentation](#)_
 - [ ] User authentication and profile saving
 - [ ] Enhanced analytics and reporting
 - [ ] Mobile-friendly UI
-- [ ] ...and more! See [open issues](https://github.com/yourusername/genai-job-recommender-mcp/issues)
+- [ ] ...and more! See [open issues](https://github.com/deepakdevp/genai-job-recommender-mcp/issues)
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -153,7 +153,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## Contact
 Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
 
-Project Link: [https://github.com/yourusername/genai-job-recommender-mcp](https://github.com/yourusername/genai-job-recommender-mcp)
+Project Link: [https://github.com/deepakdevp/genai-job-recommender-mcp](https://github.com/deepakdevp/genai-job-recommender-mcp)
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
@@ -166,16 +166,16 @@ Project Link: [https://github.com/yourusername/genai-job-recommender-mcp](https:
 * [Font Awesome](https://fontawesome.com)
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[contributors-shield]: https://img.shields.io/github/contributors/yourusername/genai-job-recommender-mcp.svg?style=for-the-badge
-[contributors-url]: https://github.com/yourusername/genai-job-recommender-mcp/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/yourusername/genai-job-recommender-mcp.svg?style=for-the-badge
-[forks-url]: https://github.com/yourusername/genai-job-recommender-mcp/network/members
-[stars-shield]: https://img.shields.io/github/stars/yourusername/genai-job-recommender-mcp.svg?style=for-the-badge
-[stars-url]: https://github.com/yourusername/genai-job-recommender-mcp/stargazers
-[issues-shield]: https://img.shields.io/github/issues/yourusername/genai-job-recommender-mcp.svg?style=for-the-badge
-[issues-url]: https://github.com/yourusername/genai-job-recommender-mcp/issues
-[license-shield]: https://img.shields.io/github/license/yourusername/genai-job-recommender-mcp.svg?style=for-the-badge
-[license-url]: https://github.com/yourusername/genai-job-recommender-mcp/blob/main/LICENSE
+[contributors-shield]: https://img.shields.io/github/contributors/deepakdevp/genai-job-recommender-mcp.svg?style=for-the-badge
+[contributors-url]: https://github.com/deepakdevp/genai-job-recommender-mcp/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/deepakdevp/genai-job-recommender-mcp.svg?style=for-the-badge
+[forks-url]: https://github.com/deepakdevp/genai-job-recommender-mcp/network/members
+[stars-shield]: https://img.shields.io/github/stars/deepakdevp/genai-job-recommender-mcp.svg?style=for-the-badge
+[stars-url]: https://github.com/deepakdevp/genai-job-recommender-mcp/stargazers
+[issues-shield]: https://img.shields.io/github/issues/deepakdevp/genai-job-recommender-mcp.svg?style=for-the-badge
+[issues-url]: https://github.com/deepakdevp/genai-job-recommender-mcp/issues
+[license-shield]: https://img.shields.io/github/license/deepakdevp/genai-job-recommender-mcp.svg?style=for-the-badge
+[license-url]: https://github.com/deepakdevp/genai-job-recommender-mcp/blob/main/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/yourprofile
+[linkedin-url]: https://www.linkedin.com/in/deepak-dev-panwar-166187135/
 [product-screenshot]: images/screenshot.png
