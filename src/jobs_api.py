@@ -3,7 +3,7 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
-apify_client = ApifyClient(os.getenv("APIFY_API_TOKEN"))
+apify_client = ApifyClient(os.getenv("APIFY_KEY"))
 
 # LinkedIn Jobs - Fetch jobs based on search query and location
 def fetch_linkedin_jobs(search_query, location = "india", rows=60):

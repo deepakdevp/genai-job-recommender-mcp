@@ -6,8 +6,11 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "apify-client>=1.12.1",
+    "fpdf>=1.7.2",
+    "mcp[cli]>=1.12.3",
     "openai>=1.98.0",
     "pymupdf>=1.26.3",
     "python-dotenv>=1.1.1",
     "streamlit>=1.47.1",
+    "streamlit-lottie>=0.0.5",
 ]

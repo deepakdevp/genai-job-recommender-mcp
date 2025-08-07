@@ -3,9 +3,11 @@ import os
 from dotenv import load_dotenv
 from openai import OpenAI
 
-load_dotenv()
-openai_client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
+load_dotenv()  # Make sure .env is in the root or specify path
+api_key = os.getenv("OPENAI_API_KEY")
+if not api_key:
+    raise ValueError("OPENAI_API_KEY not found in environment variables.")
+openai_client = OpenAI(api_key=api_key)
 
 def extract_text_from_pdf(file):
     """
@@ -34,7 +36,7 @@ def call_openai(prompt, max_tokens=500):
         str: The generated response from the OpenAI API.
     """
 
-    response = openai_client.chat.Completion.create(
+    response = openai_client.chat.completions.create(
         model="gpt-4o",
         messages=[
 
