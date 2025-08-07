@@ -1,77 +1,121 @@
-# 🧑‍💼 GenAI Job Recommender
+<!-- PROJECT SHIELDS -->
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-Unlock your career potential! Upload your resume and get personalized job recommendations, skill gap analysis, and a future roadmap—all powered by AI.
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/yourusername/genai-job-recommender-mcp">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
 
----
+  <h3 align="center">GenAI Job Recommender</h3>
 
-## 🚀 Features
+  <p align="center">
+    Unlock your career potential! Upload your resume and get personalized job recommendations, skill gap analysis, and a future roadmap—all powered by AI.
+    <br />
+    <a href="#about-the-project"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="#usage">View Demo</a>
+    ·
+    <a href="https://github.com/yourusername/genai-job-recommender-mcp/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/yourusername/genai-job-recommender-mcp/issues">Request Feature</a>
+  </p>
+</p>
 
-- **Landing Page with Animation:** Modern UI with Lottie animation and branding.
-- **Resume Parsing:** Upload your resume (PDF) and extract text automatically.
-- **AI-Powered Analysis:**
-  - Resume summary highlighting key skills and experience
-  - Skill gap analysis
-  - Personalized future roadmap
-- **Job Recommendations:**
-  - Fetches jobs from LinkedIn and Naukri using Apify
-  - Card-style job display with icons and branding
-- **Downloadable Reports:** Download skill gap and roadmap as a PDF.
-- **Tabbed Layout:** Clean navigation for summary, gaps, roadmap, and jobs.
-- **Animated & Visual UI:** Emojis, icons, and Lottie animations for a delightful experience.
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
+  </ol>
+</details>
 
----
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-## 🛠️ Setup & Installation
 
-1. **Clone the repository:**
-   ```bash
+
+GenAI Job Recommender is a modern, AI-powered web app that helps users:
+- Parse and summarize their resume
+- Identify skill gaps and receive a personalized roadmap
+- Get job recommendations from LinkedIn and Naukri
+- Download skill gap and roadmap as a PDF
+- Enjoy a beautiful, animated, and user-friendly interface
+
+### Features
+* Resume parsing (PDF)
+* AI-powered summary, skill gap analysis, and roadmap (OpenAI GPT-4o)
+* Job recommendations from LinkedIn and Naukri (Apify)
+* Card-style job display with icons and branding
+* Downloadable PDF reports
+* Animated UI with Lottie
+
+### Built With
+* [Streamlit](https://streamlit.io/)
+* [OpenAI](https://openai.com/)
+* [Apify](https://apify.com/)
+* [LottieFiles](https://lottiefiles.com/)
+* [FPDF](https://pyfpdf.github.io/)
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+To get a local copy up and running follow these simple steps.
+
+### Prerequisites
+* Python 3.8+
+* pip (or uv)
+
+### Installation
+1. Clone the repo
+   ```sh
    git clone https://github.com/yourusername/genai-job-recommender-mcp.git
    cd genai-job-recommender-mcp
    ```
-
-2. **Install dependencies:**
-   ```bash
+2. Install dependencies
+   ```sh
    pip install -r requirements.txt
-   ```
-   Or, if using `uv`:
-   ```bash
+   # or
    uv pip install -r requirements.txt
    ```
-
-3. **Set up environment variables:**
-   Create a `.env` file in the project root with the following:
+3. Set up environment variables
+   Create a `.env` file in the project root with:
    ```env
    OPENAI_API_KEY=your_openai_api_key
    APIFY_KEY=your_apify_api_key
    ```
-
-4. **Run the app:**
-   ```bash
+4. Run the app
+   ```sh
    streamlit run app.py
    ```
 
----
-
-## ⚙️ Environment Variables
-
-- `OPENAI_API_KEY` — Your OpenAI API key for GPT-4o access
-- `APIFY_KEY` — Your Apify API key for job scraping
-
----
-
-## 📦 Dependencies
-
-- streamlit
-- openai
-- pymupdf
-- python-dotenv
-- apify-client
-- streamlit-lottie
-- fpdf
-
----
-
-## 🖥️ Usage
+<!-- USAGE EXAMPLES -->
+## Usage
 
 1. Launch the app with `streamlit run app.py`.
 2. Upload your resume (PDF).
@@ -80,30 +124,58 @@ Unlock your career potential! Upload your resume and get personalized job recomm
 5. Click "Get Job Recommendations" to fetch jobs from LinkedIn and Naukri.
 6. Browse jobs in card-style format with direct links.
 
----
+_For more examples, please refer to the [Documentation](#)_
 
-## 📁 Project Structure
+<!-- ROADMAP -->
+## Roadmap
+- [ ] Add support for DOCX resumes
+- [ ] Add more job sources (Indeed, Monster, etc.)
+- [ ] User authentication and profile saving
+- [ ] Enhanced analytics and reporting
+- [ ] Mobile-friendly UI
+- [ ] ...and more! See [open issues](https://github.com/yourusername/genai-job-recommender-mcp/issues)
 
-```
-├── app.py                # Streamlit app
-├── src/
-│   ├── helper.py         # Resume parsing & OpenAI helpers
-│   ├── jobs_api.py       # Job fetching logic (LinkedIn, Naukri)
-├── assets/               # Lottie animations, icons
-├── requirements.txt
-├── README.md
-└── .env                  # (not committed) API keys
-```
+<!-- CONTRIBUTING -->
+## Contributing
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
----
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-## 🙏 Credits
-- [Streamlit](https://streamlit.io/)
-- [OpenAI](https://openai.com/)
-- [Apify](https://apify.com/)
-- [LottieFiles](https://lottiefiles.com/) for animations
+<!-- LICENSE -->
+## License
+Distributed under the MIT License. See `LICENSE` for more information.
 
----
+<!-- CONTACT -->
+## Contact
+Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
 
-## 📬 Contact
-For questions, suggestions, or contributions, open an issue or reach out to the maintainer.
+Project Link: [https://github.com/yourusername/genai-job-recommender-mcp](https://github.com/yourusername/genai-job-recommender-mcp)
+
+<!-- ACKNOWLEDGEMENTS -->
+## Acknowledgements
+* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
+* [Img Shields](https://shields.io)
+* [Choose an Open Source License](https://choosealicense.com)
+* [GitHub Pages](https://pages.github.com)
+* [Animate.css](https://daneden.github.io/animate.css)
+* [LottieFiles](https://lottiefiles.com/)
+* [Font Awesome](https://fontawesome.com)
+
+<!-- MARKDOWN LINKS & IMAGES -->
+[contributors-shield]: https://img.shields.io/github/contributors/yourusername/genai-job-recommender-mcp.svg?style=for-the-badge
+[contributors-url]: https://github.com/yourusername/genai-job-recommender-mcp/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/yourusername/genai-job-recommender-mcp.svg?style=for-the-badge
+[forks-url]: https://github.com/yourusername/genai-job-recommender-mcp/network/members
+[stars-shield]: https://img.shields.io/github/stars/yourusername/genai-job-recommender-mcp.svg?style=for-the-badge
+[stars-url]: https://github.com/yourusername/genai-job-recommender-mcp/stargazers
+[issues-shield]: https://img.shields.io/github/issues/yourusername/genai-job-recommender-mcp.svg?style=for-the-badge
+[issues-url]: https://github.com/yourusername/genai-job-recommender-mcp/issues
+[license-shield]: https://img.shields.io/github/license/yourusername/genai-job-recommender-mcp.svg?style=for-the-badge
+[license-url]: https://github.com/yourusername/genai-job-recommender-mcp/blob/main/LICENSE
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/yourprofile
+[product-screenshot]: images/screenshot.png
